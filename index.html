@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentation HH</header>
+        <ul>
+          <li><a class="nav-link" href="#Developer_guides">Developer guides</a></li>
+          <li><a class="nav-link" href="#HTML_Basic">HTML Basic</a></li>
+          <li><a class="nav-link" href="#CSS">CSS</a></li>
+          <li><a class="nav-link" href="#JavaScript">JavaScript</a></li>
+          <li><a class="nav-link" href="#PHP">PHP</a></li>
+          <li><a class="nav-link" href="#Python">Python</a></li>
+          <li><a class="nav-link" href="#Ruby">Ruby</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Developer_guides">
+            <header>Developer guides</header>
+            <article>
+                <p>
+                    There are a number of guides within MDN docs. These articles aim to add additional usage examples, 
+                    or teach you how to use an API or feature. This page links to some of the most popular material.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="HTML_Basic">
+            <header>HTML Basic</header>
+            <article>
+                <p> 
+                    HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. 
+                    For example, content could be structured within a set of paragraphs, a list of bulleted points, 
+                    or using images and data tables. As the title suggests, 
+                    this article will give you a basic understanding of HTML and its functions.
+                </p>
+                <p> As principais partes do nosso elemento são as seguintes:</p>
+                <ul>
+                    <li>
+                        A tag de abertura: Consiste no nome do elemento (neste caso, p), 
+                        envolto em colchetes angulares de abertura e fechamento. 
+                        Isso indica onde o elemento começa ou começa a ter efeito - neste caso, 
+                        onde o parágrafo começa
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                        The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. 
+                        This states where the element ends — in this case where the paragraph ends. 
+                        Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.
+                    </li>
+                    <li>The content: This is the content of the element, which in this case, is just text.</li>
+                    <li>The element: The opening tag, the closing tag, and the content together comprise the element.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <article>
+                <p>
+                    Cascading Stylesheets — or CSS — is the first technology you should start learning after HTML. 
+                    While HTML is used to define the structure and semantics of your content, 
+                    CSS is used to style it and lay it out. For example, you can use CSS to alter the font, color, size, 
+                    and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+                </p>
+                <code>
+                    rel="stylesheet" href="styles.css"
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript">
+        <header>JavaScript</header>
+        <article>
+            <p>
+                JavaScript is a programming language that allows you to implement complex things on web pages. 
+                Every time a web page does more than just sit there and display static information 
+                for you to look at—displaying timely content updates, interactive maps, animated 2D/3D graphics, 
+                scrolling video jukeboxes, or more—you can bet that JavaScript is probably involved.
+            </p>
+            <code>  
+                let myText = 'I am a string';
+                let newString = myText.replace('string', 'sausage');
+                console.log(newString);
+            </code>
+        </article>
+        </section>
+        <section class="main-section" id="PHP">
+        <header>PHP</header>
+        <article>
+        <p>
+            PHP (a recursive initialism for PHP: Hypertext Preprocessor) is an open-source server-side scripting language 
+            that can be embedded into HTML to build web applications and dynamic websites.
+        </p>
+            <code>echo "Hello World!";</code>
+            </article>
+        </section>
+        <section class="main-section" id="Python">
+        <header>Python</header>
+        <article>
+            <p>
+                Python is a high level general-purpose programming language. It uses a multi-paradigm approach, 
+                meaning it supports procedural, object-oriented, and some functional programming constructs.
+                It was created by Guido van Rossum as a successor to another language (called ABC) between 1985 and 1990, 
+                and is currently used on a large array of domains like web development, desktop applications, data science,
+                DevOps, and automation/productivity.
+            </p>
+            <code>
+                n = int(input('Type a number, and its factorial will be printed: '))
+    
+                if n < 0:
+                raise ValueError('You must enter a non-negative integer')
+
+                factorial = 1
+                for i in range(2, n + 1):
+                factorial *= i
+    
+                print(factorial)
+            </code>
+        </article>
+        </section>
+        <section class="main-section" id="Ruby">
+        <header>Ruby</header>
+        <article>
+            <p>
+                Ruby is an open-source programming language. In a Web context, Ruby is often used server-side with the Ruby 
+                On Rails (ROR) framework to produce websites/apps.
+                Ruby is also a method for annotating east Asian text in HTML documents to provide pronunciation information
+            </p>
+            <code>
+                <rb>This is a long text to check</rb>
+                <rp>（</rp><rt>short ruby</rt><rp>）</rp>
+            </code>
+            <p>
+                Ruby is object-oriented: every value is an object, including classes and instances of types 
+                that many other languages designate as primitives (such as integers, booleans, and "null"). 
+                Variables always hold references to objects. Every function is a method and methods are always called on an object. 
+                Methods defined at the top level scope become methods of the Object class. 
+                Since this class is an ancestor of every other class, such methods can be called on any object. 
+                They are also visible in all scopes, effectively serving as "global" procedures. 
+                Ruby supports inheritance with dynamic dispatch, mixins and singleton methods (belonging to, and defined for, 
+                a single instance rather than being defined on the class). Though Ruby does not support multiple inheritance, 
+                classes can import modules as mixins.
+                Ruby has been described as a multi-paradigm programming language: it allows procedural 
+                programming (defining functions/variables outside classes makes them part of the root, 'self' Object), 
+                with object orientation (everything is an object) or functional programming (it has anonymous functions, 
+                closures, and continuations; statements all have values, and functions return the last evaluation). 
+                It has support for introspection, reflection and metaprogramming, as well as support for interpreter-based threads. 
+                Ruby features dynamic typing, and supports parametric polymorphism.
+            </p>
+            <p>
+                The syntax of Ruby is broadly similar to that of Perl and Python. Class and method definitions are signaled by keywords, 
+                whereas code blocks can be defined by either keywords or braces. In contrast to Perl, 
+                variables are not obligatorily prefixed with a sigil. When used, the sigil changes the semantics of scope of the variable. 
+                For practical purposes there is no distinction between expressions and statements.
+            </p>
+        </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                            target="_blank">MDN
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
